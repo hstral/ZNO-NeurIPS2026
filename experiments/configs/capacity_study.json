@@ -1,0 +1,324 @@
+{
+  "description": "Capacity study (paper Appendix F, Tables 12-13): topologies at about 4k, 16k, and 32k real parameters, fixed from parameter counts before training. The 8.5k point reuses the 8.5k comparison (FNO, S4D, S5) and the ZNO default-objective runs. ZNO uses its default objective; all models have four layers and one topology per budget.",
+  "target_tolerance": 0.05,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "tasks": {
+    "iir_cascade": {
+      "case": "high_order_iir_cascade_v5",
+      "input_channels": 16
+    },
+    "nonlinear_narx": {
+      "case": "narx_softplus",
+      "input_channels": 1
+    },
+    "resonant_arma": {
+      "case": "resonant_arma_near_unit_circle_v4",
+      "input_channels": 7
+    }
+  },
+  "budgets": {
+    "4k": {
+      "target": 4000,
+      "models": {
+        "fno": {
+          "args": [
+            "--width",
+            "3",
+            "--depth",
+            "4",
+            "--modes",
+            "102",
+            "--learning-rate",
+            "0.002"
+          ],
+          "topology": {
+            "width": 3,
+            "depth": 4,
+            "modes": 102
+          },
+          "real_parameters": {
+            "resonant_arma": 3972,
+            "iir_cascade": 4026,
+            "nonlinear_narx": 3936
+          }
+        },
+        "s4d_official": {
+          "args": [
+            "--width",
+            "12",
+            "--depth",
+            "4",
+            "--state-dim",
+            "6",
+            "--learning-rate",
+            "0.0005",
+            "--grad-clip",
+            "1.0"
+          ],
+          "topology": {
+            "depth": 4,
+            "state_dim": 6,
+            "width": 12
+          },
+          "real_parameters": {
+            "iir_cascade": 4013,
+            "nonlinear_narx": 3833,
+            "resonant_arma": 3905
+          }
+        },
+        "zno": {
+          "args": [
+            "--width",
+            "12",
+            "--depth",
+            "4",
+            "--rank",
+            "5",
+            "--num-poles",
+            "22",
+            "--fir-order",
+            "4",
+            "--learning-rate",
+            "0.002"
+          ],
+          "topology": {
+            "depth": 4,
+            "fir_order": 4,
+            "num_poles": 22,
+            "rank": 5,
+            "width": 12
+          },
+          "real_parameters": {
+            "iir_cascade": 4081,
+            "nonlinear_narx": 3901,
+            "resonant_arma": 3973
+          }
+        },
+        "s5_official": {
+          "args": [
+            "--d-model",
+            "13",
+            "--n-layers",
+            "4",
+            "--ssm-size-base",
+            "28"
+          ],
+          "topology": {
+            "d_model": 13,
+            "n_layers": 4,
+            "ssm_size_base": 28
+          },
+          "real_parameters": {
+            "iir_cascade": 4199,
+            "nonlinear_narx": 4004,
+            "resonant_arma": 4082
+          }
+        }
+      }
+    },
+    "16k": {
+      "target": 16000,
+      "models": {
+        "fno": {
+          "args": [
+            "--width",
+            "6",
+            "--depth",
+            "4",
+            "--modes",
+            "104",
+            "--learning-rate",
+            "0.002"
+          ],
+          "topology": {
+            "width": 6,
+            "depth": 4,
+            "modes": 104
+          },
+          "real_parameters": {
+            "resonant_arma": 15907,
+            "iir_cascade": 16015,
+            "nonlinear_narx": 15835
+          }
+        },
+        "s4d_official": {
+          "args": [
+            "--width",
+            "30",
+            "--depth",
+            "4",
+            "--state-dim",
+            "16",
+            "--learning-rate",
+            "0.0005",
+            "--grad-clip",
+            "1.0"
+          ],
+          "topology": {
+            "depth": 4,
+            "state_dim": 16,
+            "width": 30
+          },
+          "real_parameters": {
+            "iir_cascade": 16367,
+            "nonlinear_narx": 15917,
+            "resonant_arma": 16097
+          }
+        },
+        "zno": {
+          "args": [
+            "--width",
+            "30",
+            "--depth",
+            "4",
+            "--rank",
+            "12",
+            "--num-poles",
+            "50",
+            "--fir-order",
+            "4",
+            "--learning-rate",
+            "0.002"
+          ],
+          "topology": {
+            "depth": 4,
+            "fir_order": 4,
+            "num_poles": 50,
+            "rank": 12,
+            "width": 30
+          },
+          "real_parameters": {
+            "iir_cascade": 16247,
+            "nonlinear_narx": 15797,
+            "resonant_arma": 15977
+          }
+        },
+        "s5_official": {
+          "args": [
+            "--d-model",
+            "27",
+            "--n-layers",
+            "4",
+            "--ssm-size-base",
+            "56"
+          ],
+          "topology": {
+            "d_model": 27,
+            "n_layers": 4,
+            "ssm_size_base": 56
+          },
+          "real_parameters": {
+            "iir_cascade": 16267,
+            "nonlinear_narx": 15862,
+            "resonant_arma": 16024
+          }
+        }
+      }
+    },
+    "32k": {
+      "target": 32000,
+      "models": {
+        "fno": {
+          "args": [
+            "--width",
+            "6",
+            "--depth",
+            "4",
+            "--modes",
+            "208",
+            "--learning-rate",
+            "0.002"
+          ],
+          "topology": {
+            "width": 6,
+            "depth": 4,
+            "modes": 208
+          },
+          "real_parameters": {
+            "resonant_arma": 30883,
+            "iir_cascade": 30991,
+            "nonlinear_narx": 30811
+          }
+        },
+        "s4d_official": {
+          "args": [
+            "--width",
+            "44",
+            "--depth",
+            "4",
+            "--state-dim",
+            "26",
+            "--learning-rate",
+            "0.0005",
+            "--grad-clip",
+            "1.0"
+          ],
+          "topology": {
+            "depth": 4,
+            "state_dim": 26,
+            "width": 44
+          },
+          "real_parameters": {
+            "iir_cascade": 32333,
+            "nonlinear_narx": 31673,
+            "resonant_arma": 31937
+          }
+        },
+        "zno": {
+          "args": [
+            "--width",
+            "42",
+            "--depth",
+            "4",
+            "--rank",
+            "17",
+            "--num-poles",
+            "94",
+            "--fir-order",
+            "4",
+            "--learning-rate",
+            "0.002"
+          ],
+          "topology": {
+            "depth": 4,
+            "fir_order": 4,
+            "num_poles": 94,
+            "rank": 17,
+            "width": 42
+          },
+          "real_parameters": {
+            "iir_cascade": 32407,
+            "nonlinear_narx": 31777,
+            "resonant_arma": 32029
+          }
+        },
+        "s5_official": {
+          "args": [
+            "--d-model",
+            "39",
+            "--n-layers",
+            "4",
+            "--ssm-size-base",
+            "80"
+          ],
+          "topology": {
+            "d_model": 39,
+            "n_layers": 4,
+            "ssm_size_base": 80
+          },
+          "real_parameters": {
+            "iir_cascade": 32851,
+            "nonlinear_narx": 32266,
+            "resonant_arma": 32500
+          }
+        }
+      }
+    }
+  }
+}

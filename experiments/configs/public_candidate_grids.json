@@ -1,0 +1,155 @@
+{
+ "silverbox_public_v1": {
+  "fno": {
+   "w4m256": "--width 4 --modes 256",
+   "w6m256": "--width 6 --modes 256",
+   "w8m256": "--width 8 --modes 256",
+   "w8m384": "--width 8 --modes 384",
+   "w10m256": "--width 10 --modes 256"
+  },
+  "zno": {
+   "p40-r8-f4": "--num-poles 40 --rank 8 --fir-order 4",
+   "p64-r12-f4": "--num-poles 64 --rank 12 --fir-order 4",
+   "p80-r12-f4": "--num-poles 80 --rank 12 --fir-order 4",
+   "p64-r16-f4": "--num-poles 64 --rank 16 --fir-order 4",
+   "p80-r16-f4": "--num-poles 80 --rank 16 --fir-order 4",
+   "p64-r12-f8": "--num-poles 64 --rank 12 --fir-order 8",
+   "p80-r12-f8": "--num-poles 80 --rank 12 --fir-order 8",
+   "p64-r12-lr1e3": "--num-poles 64 --rank 12 --fir-order 4 --learning-rate 1e-3"
+  },
+  "s4d_official": {
+   "sd12": "--state-dim 12",
+   "sd16": "--state-dim 16",
+   "sd24": "--state-dim 24",
+   "sd32": "--state-dim 32",
+   "sd24-lr3e4": "--state-dim 24 --learning-rate 3e-4",
+   "sd32-lr3e4": "--state-dim 32 --learning-rate 3e-4"
+  }
+ },
+ "wiener_hammer_public_v1": {
+  "fno": {
+   "w4m256": "--width 4 --modes 256",
+   "w6m256": "--width 6 --modes 256",
+   "w8m256": "--width 8 --modes 256",
+   "w8m384": "--width 8 --modes 384",
+   "w10m256": "--width 10 --modes 256"
+  },
+  "zno": {
+   "p40-r8-f4": "--num-poles 40 --rank 8 --fir-order 4",
+   "p64-r12-f4": "--num-poles 64 --rank 12 --fir-order 4",
+   "p80-r12-f4": "--num-poles 80 --rank 12 --fir-order 4",
+   "p64-r16-f4": "--num-poles 64 --rank 16 --fir-order 4",
+   "p80-r16-f4": "--num-poles 80 --rank 16 --fir-order 4",
+   "p64-r12-f8": "--num-poles 64 --rank 12 --fir-order 8",
+   "p80-r12-f8": "--num-poles 80 --rank 12 --fir-order 8",
+   "p64-r12-lr1e3": "--num-poles 64 --rank 12 --fir-order 4 --learning-rate 1e-3"
+  },
+  "s4d_official": {
+   "sd12": "--state-dim 12",
+   "sd16": "--state-dim 16",
+   "sd24": "--state-dim 24",
+   "sd32": "--state-dim 32",
+   "sd24-lr3e4": "--state-dim 24 --learning-rate 3e-4",
+   "sd32-lr3e4": "--state-dim 32 --learning-rate 3e-4"
+  }
+ },
+ "emps_public_v1": {
+  "fno": {
+   "w4m24": "--width 4 --modes 24",
+   "w4m64": "--width 4 --modes 64",
+   "w4m128": "--width 4 --modes 128",
+   "w6m64": "--width 6 --modes 64",
+   "w6m128": "--width 6 --modes 128",
+   "w8m128": "--width 8 --modes 128",
+   "w8m256": "--width 8 --modes 256"
+  },
+  "zno": {
+   "p8-r4-f4": "--num-poles 8 --rank 4 --fir-order 4",
+   "p12-r4-f4": "--num-poles 12 --rank 4 --fir-order 4",
+   "p16-r4-f4": "--num-poles 16 --rank 4 --fir-order 4",
+   "p16-r8-f4": "--num-poles 16 --rank 8 --fir-order 4",
+   "p24-r8-f4": "--num-poles 24 --rank 8 --fir-order 4",
+   "p24-r8-f8": "--num-poles 24 --rank 8 --fir-order 8",
+   "p32-r8-f4": "--num-poles 32 --rank 8 --fir-order 4",
+   "p32-r12-f4": "--num-poles 32 --rank 12 --fir-order 4",
+   "p32-r12-f8": "--num-poles 32 --rank 12 --fir-order 8",
+   "p24-r8-lr1e3": "--num-poles 24 --rank 8 --fir-order 4 --learning-rate 1e-3"
+  },
+  "s4d_official": {
+   "sd8": "--state-dim 8",
+   "sd12": "--state-dim 12",
+   "sd16": "--state-dim 16",
+   "sd24": "--state-dim 24",
+   "sd32": "--state-dim 32",
+   "sd24-lr3e4": "--state-dim 24 --learning-rate 3e-4",
+   "sd32-lr3e4": "--state-dim 32 --learning-rate 3e-4",
+   "sd48": "--state-dim 48"
+  }
+ },
+ "cascaded_tanks_public_v1": {
+  "fno": {
+   "w4m16": "--width 4 --modes 16",
+   "w4m32": "--width 4 --modes 32",
+   "w4m64": "--width 4 --modes 64",
+   "w6m32": "--width 6 --modes 32",
+   "w6m64": "--width 6 --modes 64",
+   "w8m32": "--width 8 --modes 32",
+   "w8m64": "--width 8 --modes 64"
+  },
+  "zno": {
+   "p8-r4-f4": "--num-poles 8 --rank 4 --fir-order 4",
+   "p12-r4-f4": "--num-poles 12 --rank 4 --fir-order 4",
+   "p16-r4-f4": "--num-poles 16 --rank 4 --fir-order 4",
+   "p16-r8-f4": "--num-poles 16 --rank 8 --fir-order 4",
+   "p24-r8-f4": "--num-poles 24 --rank 8 --fir-order 4",
+   "p24-r8-f8": "--num-poles 24 --rank 8 --fir-order 8",
+   "p32-r8-f4": "--num-poles 32 --rank 8 --fir-order 4",
+   "p32-r12-f4": "--num-poles 32 --rank 12 --fir-order 4",
+   "p32-r12-f8": "--num-poles 32 --rank 12 --fir-order 8",
+   "p24-r8-lr1e3": "--num-poles 24 --rank 8 --fir-order 4 --learning-rate 1e-3"
+  },
+  "s4d_official": {
+   "sd8": "--state-dim 8",
+   "sd12": "--state-dim 12",
+   "sd16": "--state-dim 16",
+   "sd24": "--state-dim 24",
+   "sd32": "--state-dim 32",
+   "sd24-lr3e4": "--state-dim 24 --learning-rate 3e-4",
+   "sd32-lr3e4": "--state-dim 32 --learning-rate 3e-4",
+   "sd48": "--state-dim 48"
+  }
+ },
+ "ced_public_v1": {
+  "fno": {
+   "w4m8": "--width 4 --modes 8",
+   "w4m12": "--width 4 --modes 12",
+   "w4m24": "--width 4 --modes 24",
+   "w6m12": "--width 6 --modes 12",
+   "w6m24": "--width 6 --modes 24",
+   "w8m12": "--width 8 --modes 12",
+   "w8m24": "--width 8 --modes 24"
+  },
+  "zno": {
+   "p8-r4-f4": "--num-poles 8 --rank 4 --fir-order 4",
+   "p12-r4-f4": "--num-poles 12 --rank 4 --fir-order 4",
+   "p16-r4-f4": "--num-poles 16 --rank 4 --fir-order 4",
+   "p16-r8-f4": "--num-poles 16 --rank 8 --fir-order 4",
+   "p24-r8-f4": "--num-poles 24 --rank 8 --fir-order 4",
+   "p24-r8-f8": "--num-poles 24 --rank 8 --fir-order 8",
+   "p32-r8-f4": "--num-poles 32 --rank 8 --fir-order 4",
+   "p32-r12-f4": "--num-poles 32 --rank 12 --fir-order 4",
+   "p32-r12-f8": "--num-poles 32 --rank 12 --fir-order 8",
+   "p24-r8-lr1e3": "--num-poles 24 --rank 8 --fir-order 4 --learning-rate 1e-3"
+  },
+  "s4d_official": {
+   "sd8": "--state-dim 8",
+   "sd12": "--state-dim 12",
+   "sd16": "--state-dim 16",
+   "sd24": "--state-dim 24",
+   "sd32": "--state-dim 32",
+   "sd24-lr3e4": "--state-dim 24 --learning-rate 3e-4",
+   "sd32-lr3e4": "--state-dim 32 --learning-rate 3e-4",
+   "sd48": "--state-dim 48"
+  }
+ }
+}

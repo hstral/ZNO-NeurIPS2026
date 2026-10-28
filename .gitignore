@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+# Generated data, runs, and outputs
+/data/
+/runs/
+/results/
+/smoke_outputs/
+/paper/figs/
+/paper/tables/
+# Official S5 checkout (fetched by scripts/fetch_official_s5.sh)
+/third_party/S5/

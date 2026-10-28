@@ -1,0 +1,9 @@
+# JAX side: official S5 baseline (run scripts/fetch_official_s5.sh first).
+# Use a separate environment from requirements.txt. For GPUs, install the JAX
+# build matching your CUDA version (see https://docs.jax.dev/en/latest/installation.html).
+# Tested with jax 0.11.0, flax 0.12.8, optax 0.2.8, numpy 2.5.
+jax>=0.4.30
+flax>=0.8
+optax>=0.2
+numpy>=1.23
+pytest>=7

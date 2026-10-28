@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper."
+title: "ZNO: Stable Rational Neural Operators in the Z-Domain for Discrete-Time Dynamics"
+authors:
+  - family-names: Zhu
+    given-names: Xianli
+    affiliation: Fudan University
+  - family-names: Yin
+    given-names: Jia
+    affiliation: Fudan University
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "ZNO: Stable Rational Neural Operators in the Z-Domain for Discrete-Time Dynamics"
+  authors:
+    - family-names: Zhu
+      given-names: Xianli
+      affiliation: Fudan University
+    - family-names: Yin
+      given-names: Jia
+      affiliation: Fudan University
+  collection-title: "Advances in Neural Information Processing Systems"
+  year: 2026
